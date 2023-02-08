@@ -26,3 +26,6 @@ Route.get('/', async () => {
 
 Route.get('grammer', 'GrammerController.index')
 
+Route.get('open-ai/make-image', 'MakeImagesController.generateFromOAI')
+Route.get('my-db/make-image', 'MakeImagesController.generateFromDB')
+Route.get('my-db/all-images', 'MakeImagesController.getAllImages')
