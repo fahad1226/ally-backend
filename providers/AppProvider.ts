@@ -4,6 +4,7 @@ export default class AppProvider {
   constructor(protected app: ApplicationContract) {}
 
   public register() {
+  
     // Register your own bindings
   }
 

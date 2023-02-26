@@ -24,8 +24,10 @@ Route.get('/', async () => {
   return { hello: 'Heyy' }
 })
 
-Route.get('grammer', 'GrammerController.index')
+Route.get('grammer-check', 'GrammerController.checkErrors')
+Route.get('fix-grammer', 'GrammerController.fixErrors')
 
 Route.get('open-ai/make-image', 'MakeImagesController.generateFromOAI')
 Route.get('my-db/make-image', 'MakeImagesController.generateFromDB')
-Route.get('my-db/all-images', 'MakeImagesController.getAllImages')
+Route.get('unsplash/all-images', 'MakeImagesController.unsplashImage')
+Route.get('unsplash/search-image', 'MakeImagesController.searchUnsplashImage')
